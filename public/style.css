@@ -1,3 +1,112 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout da página */
 body {
-    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.header .logo img {
+    width: 150px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Conteúdo principal */
+.main {
+    padding: 20px;
+}
+
+.featured-movies h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.movies {
+    display: flex;
+    gap: 20px;
+}
+
+.movie {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.movie h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.movie p {
+    font-size: 14px;
+    color: #555;
+}
+
+.movie button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Rodapé */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
 }
